@@ -31,6 +31,11 @@
         </nav>
     </header>
 
+    <div class="infoMobile">
+        <h3>Esse jogo não funciona nesse tipo de despositivo, tente no desktop</h3>
+     <p>Juliana Lima © 2023 - Todos os direitos reservados.</p>
+    </div>
+    
     <div class="conteudo">
 
     
@@ -120,7 +125,8 @@
 
 
 <footer>
-    <a class="linkImg" href="./index.html"><img src="./img/logoSW.png" id="logo"></a>
+    <a class="linkImg" href="./index.html"><img src="./img/logoSW.png" id="logoFooter"></a>
+
     <div class="contactUs">
         <h3>Contact Us</h3>
         103 New Design Str, Melbourne,
@@ -147,11 +153,17 @@
         App Download
         Latest News
     </div>
-    <div class="infoMobile">
-        <h3>Esse site não funciona nesse tipo de despositivo, tente no desktop</h3>
-     <p>Juliana Lima © 2023 - Todos os direitos reservados.</p>
-    </div>
 
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
 </footer>
 
     <script src="./js/scriptForca.js"></script>

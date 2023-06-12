@@ -288,12 +288,30 @@ font-family: 'Righteous', cursive;
   margin-top: 10%;
   position: relative;
 }
-
-
-
-
- /*-------------------- FOOTER --------------------*/
  
+   /*-------------------- FOOTER --------------------*/
+   footer{
+    background-color: #0d1b3d;
+    margin-top: 15%;
+    color: #cccccc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2%;
+   }
+   .contactUs, .information, .problems{
+    cursor: pointer;
+    width: 20%;
+    padding: 2%;
+    text-shadow: black 0.2em 0.2em 0.2em;
+    font-size: 20px;
+   }
+   .contactUs:hover, .information:hover, .problems:hover{
+    padding: 3%;
+   }
+   .infoMobile{
+    display: none;
+  }
 /*------------------------ RESPONSIVIDADE ---------------------*/
 
 /*---------------- CELULAR ----------------*/
@@ -390,8 +408,14 @@ font-family: 'Righteous', cursive;
     padding: 2%;
    }
    .infoMobile{
+    text-align: center;
+    margin:0 auto;
     display: block;
-    color: #701212;
+    color: #c0c0c0;
+    background-color: #0d1b3d96;
+    padding: 2%;
+    margin-top: 50%;
+    width: 80%;
   }
   .contactUs, .information, .problems{
     display: none;

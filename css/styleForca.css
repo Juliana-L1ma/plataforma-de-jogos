@@ -122,31 +122,30 @@ button{
 button:hover{
     background-color: #e9e3c0;
 }
-
-
-   /*-------------------- FOOTER --------------------*/
-   footer{
-    background-color: #0d1b3d;
-    margin-top: 5%;
-    color: #cccccc;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 2%;
-   }
-   .contactUs, .information, .problems{
-    cursor: pointer;
-    width: 20%;
-    padding: 2%;
-    text-shadow: black 0.2em 0.2em 0.2em;
-    font-size: 20px;
-   }
-   .contactUs:hover, .information:hover, .problems:hover{
-    padding: 3%;
-   }
-   .infoMobile{
-    display: none;
-  }
+.infoMobile{
+  display: none;
+}
+/*-------------------- FOOTER --------------------*/
+footer{
+  background-color: #0d1b3d;
+  margin-left: 0%;
+  margin-top: 5%;
+  color: #cccccc;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2%;
+ }
+ .contactUs, .information, .problems{
+  cursor: pointer;
+  width: 20%;
+  padding: 2%;
+  text-shadow: black 0.2em 0.2em 0.2em;
+  font-size: 20px;
+ }
+ .contactUs:hover, .information:hover, .problems:hover{
+  padding: 3%;
+ }
 /*------------------------ RESPONSIVIDADE ---------------------*/
 @media (max-width:500px){
   .conteudo{
@@ -239,8 +238,14 @@ button:hover{
     padding: 2%;
    }
    .infoMobile{
+    text-align: center;
+    margin:0 auto;
     display: block;
     color: #c0c0c0;
+    background-color: #0d1b3d96;
+    padding: 2%;
+    margin-top: 40%;
+    width: 80%;
   }
   .contactUs, .information, .problems{
     display: none;

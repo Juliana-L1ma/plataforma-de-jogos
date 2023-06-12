@@ -167,7 +167,9 @@ img{
 #btnNovoJogo, #velha{
   font-family: 'Rubik', sans-serif;
 }
-
+.infoMobile{
+  display: none;
+}
 
    /*-------------------- FOOTER --------------------*/
    footer{
@@ -190,3 +192,207 @@ img{
    .contactUs:hover, .information:hover, .problems:hover{
     padding: 3%;
    }
+
+   @media (max-width:500px){
+    main{
+      display: none;
+    }
+    header{
+      position: absolute ;
+      height: 80px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    #logo{
+      height: 50px;
+      padding: 5px;
+    }
+    #menu {
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 70px;
+      right: 0px;
+      background: #172956;
+      transition: 0.6s;
+      z-index: 1000;
+      height: 0px;
+      visibility: hidden;
+      overflow-y: hidden;
+    }
+    #nav.active #menu {
+      display: flex;
+      flex-direction: column;
+      height: calc(40vh - 70px);
+      visibility: visible;
+      overflow-y: auto;
+    }
+    #menu a {
+      text-align: center;
+      font-size: 15px;
+      padding: 1rem 0;
+      margin: 0 1rem;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+    }
+    #btn-mobile {
+      display: flex;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+      gap: 0.5rem;
+      color: #d6d8db;
+    
+    }
+    #hamburger {
+      border-top: 2px solid;
+      width: 20px;
+      color: #d6d8db;
+    }
+    #hamburger::after,
+    #hamburger::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: currentColor;
+      margin-top: 5px;
+      transition: 0.3s;
+      position: relative;
+    }
+    #nav.active #hamburger {
+      border-top-color: transparent;
+    }
+    #nav.active #hamburger::before {
+      transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+    footer{
+      background-color: #0d1b3d;
+      width: 100%;
+      margin-top: 100%;
+      color: #cccccc;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 2%;
+     }
+     .infoMobile{
+      text-align: center;
+      margin:0 auto;
+      display: block;
+      color: #c0c0c0;
+      background-color: #0d1b3d96;
+      padding: 2%;
+      margin-top: 40%;
+      width: 80%;
+    }
+    .contactUs, .information, .problems{
+      display: none;
+    }
+    }
+    
+    @media only screen and (min-width: 480px) and (max-width: 860px) {
+      .conteudo{
+        display: none;
+      }
+      header{
+        position: absolute ;
+        height: 80px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      #logo{
+        height: 50px;
+        padding: 5px;
+      }
+      #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background: #172956;
+        transition: 0.6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+      }
+      #nav.active #menu {
+        display: flex;
+        flex-direction: column;
+        height: calc(40vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+      }
+      #menu a {
+        text-align: center;
+        font-size: 15px;
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+      }
+      #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+        color: #d6d8db;
+      
+      }
+      #hamburger {
+        border-top: 2px solid;
+        width: 20px;
+        color: #d6d8db;
+      }
+      #hamburger::after,
+      #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+      }
+      #nav.active #hamburger {
+        border-top-color: transparent;
+      }
+      #nav.active #hamburger::before {
+        transform: rotate(135deg);
+      }
+      #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+      }
+      footer{
+        background-color: #0d1b3d;
+        width: 100%;
+        margin-top: 130%;
+        color: #cccccc;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 2%;
+       }
+       .infoMobile{
+        display: block;
+        color: #c0c0c0;
+      }
+      .contactUs, .information, .problems{
+        display: none;
+      }
+    }

@@ -14,7 +14,7 @@ function videoClose(){
     document.getElementById("gif").style.display = "none";
 }
 
-fetch('./js/selecao.json')
+fetch('../js/selecao.json')
 .then(response => response.json())
 .then(informacoes => {
     console.log(informacoes);

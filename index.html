@@ -30,7 +30,7 @@
             </ul>
         </nav>
     </header>
-
+    
 
     <!-- ******************************************* -->
     <main>
@@ -122,7 +122,7 @@
 
 
     <footer>
-        <img src="./img/logoSW.png" id="logo">
+        <img src="./img/logoSW.png" id="SWlogo">
         <div class="contactUs">
             <h2>Contact Us</h2>
             103 New Design Str, Melbourne,
@@ -156,8 +156,18 @@
         </div>
     </footer>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.css"></script>
-
+    
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+      
     <script>
     const btnMobile = document.getElementById('btn-mobile');
 
@@ -177,6 +187,9 @@ function toggleMenu(event) {
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
 </script>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.css"></script>
 </body>
 
 </html>

@@ -304,8 +304,14 @@ p{
     padding: 2%;
    }
    .infoMobile{
+    text-align: center;
+    margin:0 auto;
     display: block;
     color: #c0c0c0;
+    background-color: #0d1b3d96;
+    padding: 2%;
+    margin-top: 40%;
+    width: 80%;
   }
   .contactUs, .information, .problems{
     display: none;
