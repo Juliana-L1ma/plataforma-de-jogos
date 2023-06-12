@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+body{
+    background-color: rgb(45, 32, 49);
+    background-image: url(../img/backgroundc.png);
+    margin: 0;
+    padding: 0;
+}
+
+/*----------------- estilo do header da página home -----------*/
+
+#logoHeader{
+  height: 100px;
+  border-radius: 35%;
+  margin-top: 0%;
+  margin-left: 0%;
+}
+
+#logoFooter{
+  height: 120px;
+  border-radius: 35%;
+  margin-top: 2%;
+  margin-left: 0%;
+}
+
+header {
+  width: 98%;
+  top:0;
+  left: 0;
+  height: 120px;
+  margin-top: 0%;
+  margin-bottom: 2%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #172956c5;
+  font-size: 25px;
+}
+
+.header-item{
+  font-weight: bold;
+  color: rgb(240, 240, 240);
+  text-decoration: none;
+}
+
+a:hover {
+  background: #1a3579;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+}
+
+#btn-mobile {
+  display: none;
+}
+.linkImg:hover{
+  background-color: #0d1b3d;
+}
+/*--------------------- fim do header ----------------*/
+#jogo{
+    margin-left: 10%;
+    width: 603px;
+    height: 603px;
+    border: solid 3px;
+    display: inline-block;
+    background-color: rgb(105, 105, 105);
+}
+.titulo{
+  font-family: 'Star Wars', sans-serif;
+    text-align: center;
+    color: yellow;
+    padding: 2%;
+}
+#resultado{
+    width: 15%;
+    border-radius: 10%;
+    --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+    /* background-color: rgba(128, 128, 128, 0.76); */
+    margin-left: 10%;
+    float: left;
+    font-family: 'Rubik', sans-serif;
+    padding: 1%;
+    border-radius: 1rem;
+    overflow: visible;
+    background: #f7ba2b;
+    background: var(--background);
+    position: relative;
+    z-index: 1;
+}
+/*-------------------------------------*/
+  
+.conteudoResultado{
+    background-color: rgba(128, 128, 128, 0.76);
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    padding: 10%;
+    color: rgb(255, 255, 255);
+ border-radius: .7rem;
+}
+#resposta{
+    font-size: 30;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.linha{
+    height: 200px;
+    border-bottom: solid 1px;
+}
+img{
+    margin-left: 25%;
+    margin-top: 20%;
+}
+.casa{
+    width: 200px;
+    height: 100%;
+    border-right: solid 1px;
+    float: left;
+}
+
+.xis, .bola, .velha{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+/*--------------------------------------*/
+#btnNovo{
+    color: white;
+    width: fit-content;
+    min-width: 100px;
+    height: 45px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2.5px solid #00000091;
+    box-shadow: 15px 15px 40px -20px black;
+    cursor: pointer;
+    background: linear-gradient(to top, #00154c, #12376e, #23487f);
+    transition: all 0.2s ease-in-out 0ms;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+#btnNovo:hover{
+    background-color: #F2F2F2;
+  box-shadow: 0px 0px 20px -18px;
+}
+#btnNovo:active{
+    transform: scale(0.95);
+}
+#btnNovoJogo, #velha{
+  font-family: 'Rubik', sans-serif;
+}
+
+
+   /*-------------------- FOOTER --------------------*/
+   footer{
+    background-color: #0d1b3d;
+    margin-left: 0%;
+    margin-top: 5%;
+    color: #cccccc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2%;
+   }
+   .contactUs, .information, .problems{
+    cursor: pointer;
+    width: 20%;
+    padding: 2%;
+    text-shadow: black 0.2em 0.2em 0.2em;
+    font-size: 20px;
+   }
+   .contactUs:hover, .information:hover, .problems:hover{
+    padding: 3%;
+   }

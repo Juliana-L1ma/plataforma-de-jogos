@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./css/styleon.css">
+    <title>Starship race</title>
+</head>
+<body id="body" onload="exibirPergunta(), alerta()">
+
+  <header>
+    <img src="./img/logoSW.png" id="logo">
+
+    <nav id="nav">
+        <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+            aria-expanded="false">Menu
+            <span id="hamburger"></span>
+        </button>
+        <ul id="menu" role="menu">
+            <li><a class="header-item" href="#jogosonline">Jogos online  |   </a></li>
+            <li> <a class="header-item" href="products.html">Comprar Jogos  |   </a></li>
+            <li><a class="header-item" href="aboutus.html">Chat  | </a></li>
+            <li><a class="header-item" href="/">Minha Conta  | </a></li>
+        </ul>
+    </nav>
+  </header>
+
+
+  <div id="mainJogo">
+  <nav class="header-do-jogo">
+
+  <button class="caixa-header">
+    SCORE: <span id="score">0</span>
+  </button>
+
+  <div class="caixaDePerguntas">
+    <p id="pergunta">Perguna aqui</p>
+  <div class="sendAnswer">
+    <div class="textInputWrapper">
+      <input id="resposta" placeholder="Escreva aqui" type="text" class="textInput">
+    </div>
+    <button type="submit" id="enviarResposta" onclick="conferir()"><span></span>Conferir</button>
+  </div>
+ 
+
+*lembre-se apenas nomes de pessoas e cidades começam com letra maiúscula
+  </div>
+</nav>
+  
+        <div id="naveEmpire1">
+          <img src="./img/naveEmpire1.png" width="300px">
+       </div>
+
+       <div id="naveMillenium">
+        <img src="./img/millennium.png" width="190px">
+       </div>
+
+       
+       <div id="naveEmpire2">
+        <img src="./img/empire.png" width="150px">
+       </div>
+
+    </div>
+
+    <div class="infoMobile">
+      <h3>Esse site não funciona nesse tipo de despositivo, tente no desktop</h3>
+   <p>Juliana Lima © 2023 - Todos os direitos reservados.</p>
+  </div>
+
+    <script src="./js/scripton.js"></script> 
+</body>
+<script>
+  const btnMobile = document.getElementById('btn-mobile');
+
+function toggleMenu(event) {
+if (event.type === 'touchstart') event.preventDefault();
+const nav = document.getElementById('nav');
+nav.classList.toggle('active');
+const active = nav.classList.contains('active');
+event.currentTarget.setAttribute('aria-expanded', active);
+if (active) {
+  event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+} else {
+  event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+}
+}
+
+btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('touchstart', toggleMenu);
+</script>
+</html>

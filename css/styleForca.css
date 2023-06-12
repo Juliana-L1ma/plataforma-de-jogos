@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+
+body {
+    background-color: rgb(45, 32, 49);
+    background-image: url(../img/backgroundc.png);
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    color: yellow;
+}
+
+
+#logo{
+  height: 100px;
+  border-radius: 35%;
+  padding: 15px;
+}
+
+
+header {
+  width: 98%;
+  top:0;
+  left: 0;
+  height: 100px;
+  margin-bottom: 2%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #172956c5;
+  font-size: 25px;
+}
+
+.header-item{
+  font-weight: bold;
+  color: rgb(240, 240, 240);
+  text-decoration: none;
+}
+
+a:hover {
+  background: #1a3579;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+}
+
+#btn-mobile {
+  display: none;
+}
+.linkImg:hover{
+  background-color: #0d1b3d;
+}
+/*--------------------- fim do header ----------------*/
+
+/*------------------ estilo da caixa com score e imagem da forca---------------*/
+
+/*-------------------------- CAIXA DE SCORE -------------------*/
+#tabAcerto{
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    background: rgb(0,102,223);
+    background: radial-gradient(circle, rgba(0, 100, 223, 0.712) 0%, rgba(4, 0, 70, 0.651) 66%);
+}
+#titulo{
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-size: 25px;
+}
+#acerto{
+    font-family: 'Star Wars', sans-serif;
+    color: yellow;
+    padding: 1%;
+    font-size: 15px;
+}
+#palcerta{
+    font-size: 15px;
+    font-family: 'Star Wars', sans-serif;
+    color: yellow;
+    padding: 1%;
+}
+/*----------------------- IMG DA FORCA ----------------*/
+
+#imagem{
+    width: 500px;
+    height: 500px;
+    margin-left: 5%;
+}
+
+
+/*------------------- termina a caixa de score e img ------------*/
+
+/*------------------- TEMA, INPUT DA PALAVRA E TECLADO ----------------*/
+button{
+    padding: 1.1em 2em;
+    background: none;
+    border: 2px solid #fff;
+    font-size: 15px;
+    color: #131313;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    border-radius: 12px;
+    background-color: #ecd448;
+    font-weight: bolder;
+    box-shadow: 0 2px 0 2px #000;
+}
+button:hover{
+    background-color: #e9e3c0;
+}
+
+
+   /*-------------------- FOOTER --------------------*/
+   footer{
+    background-color: #0d1b3d;
+    margin-top: 5%;
+    color: #cccccc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2%;
+   }
+   .contactUs, .information, .problems{
+    cursor: pointer;
+    width: 20%;
+    padding: 2%;
+    text-shadow: black 0.2em 0.2em 0.2em;
+    font-size: 20px;
+   }
+   .contactUs:hover, .information:hover, .problems:hover{
+    padding: 3%;
+   }
+   .infoMobile{
+    display: none;
+  }
+/*------------------------ RESPONSIVIDADE ---------------------*/
+@media (max-width:500px){
+  .conteudo{
+    display: none;
+  }
+  header{
+    position: absolute ;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #logo{
+    height: 50px;
+    padding: 5px;
+  }
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #172956;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    display: flex;
+    flex-direction: column;
+    height: calc(40vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    text-align: center;
+    font-size: 15px;
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+    color: #d6d8db;
+  
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+    color: #d6d8db;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+  footer{
+    background-color: #0d1b3d;
+    width: 100%;
+    margin-top: 100%;
+    color: #cccccc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2%;
+   }
+   .infoMobile{
+    display: block;
+    color: #c0c0c0;
+  }
+  .contactUs, .information, .problems{
+    display: none;
+  }
+  }
+  
+  @media only screen and (min-width: 480px) and (max-width: 860px) {
+    .conteudo{
+      display: none;
+    }
+    header{
+      position: absolute ;
+      height: 80px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    #logo{
+      height: 50px;
+      padding: 5px;
+    }
+    #menu {
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 70px;
+      right: 0px;
+      background: #172956;
+      transition: 0.6s;
+      z-index: 1000;
+      height: 0px;
+      visibility: hidden;
+      overflow-y: hidden;
+    }
+    #nav.active #menu {
+      display: flex;
+      flex-direction: column;
+      height: calc(40vh - 70px);
+      visibility: visible;
+      overflow-y: auto;
+    }
+    #menu a {
+      text-align: center;
+      font-size: 15px;
+      padding: 1rem 0;
+      margin: 0 1rem;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+    }
+    #btn-mobile {
+      display: flex;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+      gap: 0.5rem;
+      color: #d6d8db;
+    
+    }
+    #hamburger {
+      border-top: 2px solid;
+      width: 20px;
+      color: #d6d8db;
+    }
+    #hamburger::after,
+    #hamburger::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: currentColor;
+      margin-top: 5px;
+      transition: 0.3s;
+      position: relative;
+    }
+    #nav.active #hamburger {
+      border-top-color: transparent;
+    }
+    #nav.active #hamburger::before {
+      transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+    footer{
+      background-color: #0d1b3d;
+      width: 100%;
+      margin-top: 130%;
+      color: #cccccc;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 2%;
+     }
+     .infoMobile{
+      display: block;
+      color: #c0c0c0;
+    }
+    .contactUs, .information, .problems{
+      display: none;
+    }
+  }
+
+
+
+
+

@@ -1,0 +1,557 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+body{
+    background-color: rgb(45, 32, 49);
+    background-image: url(../img/backgroundc.png);
+    font-family: 'Rubik', sans-serif;
+}
+/*----------------- estilo do header da página home -----------*/
+
+#logo{
+    height: 180px;
+    border-radius: 35%;
+    padding: 15px;
+}
+
+  
+  header {
+    position: fixed;
+    width: 100%;
+    top:0;
+    left: 0;
+    height: 150px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #172956c5;
+    font-size: 25px;
+  }
+  
+  .header-item{
+    font-weight: bold;
+    color: rgb(240, 240, 240);
+    text-decoration: none;
+  }
+  
+  #menu a:hover {
+    background: #1a3579;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  #menu {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+  }
+  
+  #menu a {
+    display: block;
+    padding: 0.5rem;
+  }
+  
+  #btn-mobile {
+    display: none;
+  }
+/*--------------------- fim do header ----------------*/
+
+.topMiddle{
+    margin-top: 15%;
+    margin-bottom: 3%;
+}
+
+/*------------- input de pesquisa ------------*/
+.search {
+    --input-line: #cccccc;
+    --input-text-color: #808080;
+    --input-text-hover-color: transparent;
+    --input-border-color: #f0ba09;
+    --input-border-hover-color: #11e3ff;
+    --input-bg-color: #333333;
+    --search-max-width: 400px;
+    --search-min-width: 250px;
+    --border-radius: 5px;
+    --transition-cubic-bezier: 150ms cubic-bezier(0.4,0,0.2,1);
+  }
+  
+  .search-box {
+    max-width: var(--search-max-width);
+    min-width: var(--search-min-width);
+    height: 55px;
+    margin-left: 8%;
+    border: 1px solid var(--input-border-color);
+    border-radius: var(--border-radius);
+    padding: 5px 15px;
+    background: var(--input-bg-color);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: var(--transition-cubic-bezier);
+  }
+  
+  .search-box:hover {
+    border-color: var(--input-border-hover-color);
+  }
+  
+  /*Section input*/
+  .search-field {
+    position:relative;
+    width: 100%;
+    height: 100%;
+    left: -5px;
+    border: 0;
+  }
+  
+  .input {
+    width: calc(100% - 29px);
+    height: 100%;
+    border: 0;
+    border-color: transparent;
+    font-size: 1rem;
+    padding-right: 0px;
+    color: var(--input-line);
+    background: var(--input-bg-color);
+    border-right: 2px solid var(--input-border-color);
+    outline: none;
+  }
+  
+  .input::-webkit-input-placeholder {
+    color: var(--input-text-color);
+  }
+  
+  .input::-moz-input-placeholder {
+    color: var(--input-text-color);
+  }
+  
+  .input::-ms-input-placeholder {
+    color: var(--input-text-color);
+  }
+  
+  .input:focus::-webkit-input-placeholder {
+    color: var(--input-text-hover-color);
+  }
+  
+  .input:focus::-moz-input-placeholder {
+    color: var(--input-text-hover-color);
+  }
+  
+  .input:focus::-ms-input-placeholder {
+    color: var(--input-text-hover-color);
+  }
+  
+  /*Search button*/
+  .search-box-icon {
+    width: 52px;
+    height: 55px;
+    position: absolute;
+    top: -6px;
+    right: -21px;
+    background: transparent;
+    border-bottom-right-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    transition: var(--transition-cubic-bezier);
+  }
+  
+  .search-box-icon:hover {
+    background: var(--input-border-color);
+  }
+  
+  .btn-icon-content {
+    width: 52px;
+    height: 35px;
+    top: -6px;
+    right: -21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    border-bottom-right-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    transition: var(--transition-cubic-bezier);
+    opacity: .4;
+  }
+  
+  .btn-icon-content:hover {
+    opacity: .8;
+  }
+  
+  .search-icon {
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 7px;
+    right: 15px;
+  }
+
+   /*------------------ banner de inicio -----------------------*/
+
+   .bannerPrincipal{
+    background-color: #0d1b3d;
+    box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.664);
+    width: 85%;
+    margin-top: 4%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   }
+   .categories{
+    padding: 1%;
+    width: 350px;
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border:2px solid #ececec;
+   }
+   #banner1{
+    margin-right: 1%;
+    margin-top: 1%;
+    height: 450px;
+   }
+   .hr{
+    color: #808080;
+   }
+   #categories{
+    padding: 2%;
+    list-style: none;
+    
+   }
+   .category-item{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+   }
+   .category-item:hover{
+    background-color: #1a3579;
+    padding: 5% 15%;
+   }
+  .titulo-sessao{
+    text-shadow: black 0.2em 0.2em 0.2em;
+    font-size: 27px;
+    font-weight: bold;
+    color: #cccccc;
+   }
+
+   ul{
+    text-shadow: black 0.2em 0.2em 0.2em;
+   }
+
+   #faixa1{
+    width: 85%;
+    margin-left: 7.5%;
+    padding-top: 4%;
+   }
+   /*------------------------------------------*/
+   .card {
+    width: 190px;
+    height: 254px;
+    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    border-radius: 20px;
+    transition: all .3s;
+   }
+   
+   .card2 {
+    width: 190px;
+    height: 254px;
+    background-color: #1a1a1a;
+    transition: all .2s;
+   }
+   
+   .card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+   }
+   
+   .card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+   }
+
+   /*---------------- CAIXA COM JOGOS DISPONÍVEIS -------------*/
+   .titulo-sessao-jogos{
+    text-shadow: black 0.2em 0.2em 0.2em;
+    font-size: 27px;
+    margin-left: 5%;
+    padding: 2%;
+    font-weight: bold;
+    color: #f1f1f1;
+   }
+   .jogos-online{
+    margin: 0 auto;
+    margin-top: 3%;
+    background-color: #3333335d;
+    width: 85%;
+   }
+   .jogos-online-caixas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2%;
+    
+   }
+.capasJogos{
+  background-color: #11e3ff;
+  box-shadow: 15px 15px 30px rgba(138, 98, 175, 0.842),
+  -15px -15px 30px rgba(20, 92, 151, 0.644);
+  width: 250px;
+  height: 350px;
+  margin-bottom: 5%;
+}
+#novoJogo{
+  height: 400px;
+  width: 900px;
+  margin-left: 25%;
+  margin-top: 6%;
+}
+   /*----------------- CAIXA SOBRE NÓS ----------*/
+  
+   .aboutUs{
+    height: 400px;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   }
+   
+   .SWstore{
+    margin-left: 5%;
+    width: 550px;
+   }
+   .caixaDeTexto{
+    padding: 2%;
+    margin-right: 7%;
+    background-color: #0d1b3d;
+    box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, 0.664);
+    width: 50%;
+    color: #cccccc;
+   }
+   .aboutCompanytext{
+    font-size: 20px;
+    text-shadow: black 0.2em 0.2em 0.2em;
+   }
+
+   /*-------------------- FOOTER --------------------*/
+   footer{
+    background-color: #0d1b3d;
+    margin-top: 5%;
+    color: #cccccc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2%;
+   }
+   .infoMobile{
+    display: none;
+  }
+   .contactUs, .information, .problems{
+    cursor: pointer;
+    width: 20%;
+    padding: 2%;
+    text-shadow: black 0.2em 0.2em 0.2em;
+    font-size: 20px;
+   }
+   .contactUs:hover, .information:hover, .problems:hover{
+    padding: 3%;
+   }
+
+   
+/*------------------------ RESPONSIVIDADE ---------------------*/
+
+/*---------------- CELULAR ----------------*/
+
+/*------------------ TABLET -------------------*/
+@media (max-width:500px){
+main{
+  display: none;
+}
+header{
+  position: absolute ;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#logo{
+  height: 50px;
+  padding: 5px;
+}
+#menu {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 70px;
+  right: 0px;
+  background: #172956;
+  transition: 0.6s;
+  z-index: 1000;
+  height: 0px;
+  visibility: hidden;
+  overflow-y: hidden;
+}
+#nav.active #menu {
+  display: flex;
+  flex-direction: column;
+  height: calc(40vh - 70px);
+  visibility: visible;
+  overflow-y: auto;
+}
+#menu a {
+  text-align: center;
+  font-size: 15px;
+  padding: 1rem 0;
+  margin: 0 1rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+}
+#btn-mobile {
+  display: flex;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  gap: 0.5rem;
+  color: #d6d8db;
+
+}
+#hamburger {
+  border-top: 2px solid;
+  width: 20px;
+  color: #d6d8db;
+}
+#hamburger::after,
+#hamburger::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: currentColor;
+  margin-top: 5px;
+  transition: 0.3s;
+  position: relative;
+}
+#nav.active #hamburger {
+  border-top-color: transparent;
+}
+#nav.active #hamburger::before {
+  transform: rotate(135deg);
+}
+#nav.active #hamburger::after {
+  transform: rotate(-135deg);
+  top: -7px;
+}
+footer{
+  background-color: #0d1b3d;
+  width: 100%;
+  margin-top: 100%;
+  color: #cccccc;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2%;
+ }
+ .infoMobile{
+  display: block;
+  color: #c0c0c0;
+}
+.contactUs, .information, .problems{
+  display: none;
+}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 860px) {
+  main{
+    display: none;
+  }
+  header{
+    position: absolute ;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #logo{
+    height: 50px;
+    padding: 5px;
+  }
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #172956;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    display: flex;
+    flex-direction: column;
+    height: calc(40vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    text-align: center;
+    font-size: 15px;
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+    color: #d6d8db;
+  
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+    color: #d6d8db;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+  footer{
+    background-color: #0d1b3d;
+    width: 100%;
+    margin-top: 130%;
+    color: #cccccc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2%;
+   }
+   .infoMobile{
+    display: block;
+    color: #c0c0c0;
+  }
+  .contactUs, .information, .problems{
+    display: none;
+  }
+}
+

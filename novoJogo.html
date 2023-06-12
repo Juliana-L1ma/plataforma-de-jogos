@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="./css/styleNovoJogo.css">
+    <title>The Mandalorian</title>
+</head>
+
+<body>
+
+    <img id="planetInformationimg" src="./imgMandalore/planetInformation.png">
+    <div id="gif"><img onclick="videoClose()" src="./imgMandalore/gif.gif"></div>
+    <button class="pontoVermelho" onclick="video()"></button>
+   
+    
+    <div class="clear"></div>
+
+    <footer>
+        <div class="intro">  
+            <button class="btn2" onclick="voltarIntro()">Voltar</button>
+            <img id="introducao" src="./imgMandalore/introducao1-removebg-preview.png" alt="">
+            <button class="btn1" onclick="proxIntro()">Próximo</button>
+            <button class="btn2"><a href="./selecaoPersonagens.html"> Iniciar aventura</a></button>
+        </div>
+    </footer>
+
+    <script src="./js/scriptNovoJogo.js"></script>
+</body>
+<script>
+    
+window.sr = ScrollReveal({ reset: true });
+sr.reveal('.intro', { duration: 1000 });
+
+window.sr = ScrollReveal();
+sr.reveal('.intro', {
+    origin: 'left',
+    distance: '70rem',
+    duration: 1000,
+    delay: 100,
+    easing: 'ease-in-out'
+});
+</script>
+
+</html>

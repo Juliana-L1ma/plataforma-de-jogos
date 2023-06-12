@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styleVelha.css">
+    
+    <title>Jogo da velha</title>
+</head>
+
+<body onload="recomeca()">
+    <header>
+        <img src="./img/logoSW.png" id="logoHeader">
+
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">Menu
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a class="header-item" href="./index.html">Home     | </a></li>
+                <li> <a class="header-item" href="./">Comprar Jogos    | </a></li>
+                <li><a class="header-item" href="https://discordchat-jp6001707.b4a.run/" target="_blank">Chat     |</a></li>
+                <li><a class="header-item" href="/">Minha Conta   | </a></li>
+            </ul>
+        </nav>
+    </header>
+      
+    <main>
+    <h1 class="titulo">Guerras galacteas o império contra a resistência Rebelde<br> Quem Leva essa?</h1>
+<br><br>
+    <div id="jogo">
+       
+        <div class="linha">
+            <div class="casa" id="casa0" onclick="verifica(0)">
+                <img src=""  id="img0" width="100px"/>
+            </div>
+
+            <div class="casa" id="casa1" onclick="verifica(1)">
+                <img src=""  id="img1" width="100px"/>
+            </div>
+
+            <div class="casa" id="casa2" onclick="verifica(2)">
+                <img src=""  id="img2" width="100px"/>
+            </div>
+        </div>
+
+        <div class="linha">
+            <div class="casa" id="casa3" onclick="verifica(3)">
+                <img src=""  id="img3" width="100px"/>
+            </div>
+
+            <div class="casa" id="casa4" onclick="verifica(4)">
+                <img src=""  id="img4" width="100px"/>
+            </div>
+
+            <div class="casa" id="casa5" onclick="verifica(5)">
+                <img src=""  id="img5" width="100px"/>
+            </div>
+        </div>
+
+        <div class="linha">
+            <div class="casa" id="casa6" onclick="verifica(6)">
+                <img src=""  id="img6" width="100px"/>
+            </div>
+
+            <div class="casa" id="casa7" onclick="verifica(7)">
+                <img src=""  id="img7" width="100px"/>
+            </div>
+
+            <div class="casa" id="casa8" onclick="verifica(8)">
+                <img src=""  id="img8" width="100px"/>
+            </div>
+        </div>
+    </div>
+
+    <div id="resultado">
+        <div class="conteudoResultado">
+        <p id="resposta">Resultado: </p>
+        <br>
+        <p id="imperio" class="imperio">Pontos do Império: 0</p>
+        <p id="rebelde" class="rebelde">Pontos do Rebelde: 0</p>
+        <p id="velha" class="velha">Velha: 0</p>
+        <form>
+            <input type="button" id="btnNovo" value="NOVO JOGO" onclick="recomeca()">
+        </form>
+
+    </div>
+    </div>
+
+</main>
+
+    <footer>
+        <a class="linkImg" href="./index.html"><img src="./img/logoSW.png" id="logoFooter"></a>
+
+        <div class="contactUs">
+            <h3>Contact Us</h3>
+            103 New Design Str, Melbourne,
+            San Francisco, CA 94110, United States of America​ Australia<br>
+            (+01) 123-456-789
+            <br>
+            demo@company.com
+        </div>
+
+        <div class="information">
+            <h3>Information</h3>
+            About Us
+            Contact Us
+            Terms & Conditions
+            Returns & Exchanges
+            Shipping & Delivery
+        </div>
+
+        <div class="problems">
+            <h3>Problems</h3>
+            Your Account
+            Return Center
+            Purchase
+            App Download
+            Latest News
+        </div>
+
+
+    </footer>
+    <script src="./js/scriptVelha.js"></script>
+</body>
+
+
+</html>

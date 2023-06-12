@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/stylePalavras.css">
+    <title>Web Front-end aula 06/02/2023</title>
+</head>
+
+<body>
+    <header>
+        <img src="./img/logoSW.png" id="logo">
+
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">Menu
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a class="header-item" href="./index.html">Home     | </a></li>
+                <li> <a class="header-item" href="./">Comprar Jogos    | </a></li>
+                <li><a class="header-item" href="https://discordchat-jp6001707.b4a.run/" target="_blank">Chat    |</a></li>
+                <li><a class="header-item" href="/">Minha Conta   | </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="tema">
+            Escreva uma palavra aleatória engraçada para completar os filmes
+        </h1>
+
+
+        <input id="palavra" type="text" class="input" placeholder="Digite a palavra aqui:">
+        <input type="button" onclick="jogar()" value="enviar" id="button">
+
+          
+    </div>
+
+    <div class="filmesSW">
+
+        <div class="coluna1">
+
+            <div class="card" id="cardC1">
+                <div class="card__content">
+                    <img src="./img/episodio1.png" class="filmeImg">
+                    <p>A ameaça </p><p id="troca1">__________</p>
+                </div>
+            </div>
+            <br>
+
+            <div class="card" id="cardC1">
+                <div class="card__content">
+                    <img src="./img/episodio2.png" class="filmeImg">
+                    <p>Ataque dos </p><p id="troca2">__________</p>
+                </div>
+            </div>
+            <br>
+
+            <div class="card" id="cardC1">
+                <div class="card__content">
+                    <img src="./img/episodio3.png" class="filmeImg">
+                    <p>A vingança dos </p><p id="troca3">__________</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="coluna2">
+            <div class="card" id="cardC2">
+                <div class="card__content">
+                    <img src="./img/episodio4.png" class="filmeImg">
+                    <p>Uma nova </p><p id="troca4">__________</p>
+                </div>
+            </div>
+            <br>
+
+            <div class="card" id="cardC2">
+                <div class="card__content">
+                    <img src="./img/episodio5.png" class="filmeImg">
+                    <p>O </p> <p id="troca5">__________</p><p> contra-ataca</p>
+                </div>
+            </div>
+            <br>
+
+            <div class="card" id="cardC2">
+                <div class="card__content">
+                    <img src="./img/episodio6.png" class="filmeImg">
+                    <p>O </p> <p id="troca6">__________</p><p>de Jedi</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="coluna3">
+
+            <div class="card" id="cardC3">
+                <div class="card__content">
+                    <img src="./img/episodio7.png" class="filmeImg">
+                    <p>O </p><p id="troca7">__________</p><p> da força</p>
+                </div>
+            </div>
+            <br>
+
+            <div class="card" id="cardC3">
+                <div class="card__content">
+                    <img src="./img/episodio8.png" class="filmeImg">
+                    <p>Os últimos </p><p id="troca8">__________</p>
+                </div>
+            </div>
+            <br>
+
+            <div class="card" id="cardC3">
+                <div class="card__content">
+                    <img src="./img/episodio9.png" class="filmeImg">
+                    <p>A </p><p id="troca9">__________</p><p> Skywalker</p>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+
+</main>
+    <footer>
+        <a class="linkImg" href="./index.html"><img src="./img/logoSW.png" id="logo"></a>
+
+        <div class="contactUs">
+            <h3>Contact Us</h3>
+            103 New Design Str, Melbourne,
+            San Francisco, CA 94110, United States of America​ Australia<br>
+            (+01) 123-456-789
+            <br>
+            demo@company.com
+        </div>
+
+        <div class="information">
+            <h3>Information</h3>
+            About Us
+            Contact Us
+            Terms & Conditions
+            Returns & Exchanges
+            Shipping & Delivery
+        </div>
+
+        <div class="problems">
+            <h3>Problems</h3>
+            Your Account
+            Return Center
+            Purchase
+            App Download
+            Latest News
+        </div>
+
+        <div class="infoMobile">
+            <h3>Esse site não funciona nesse tipo de despositivo, tente no desktop</h3>
+         <p>Juliana Lima © 2023 - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+<script src="./js/scriptPalavras.js"></script>
+
+</html>
