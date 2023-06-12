@@ -1,0 +1,62 @@
+{
+   "armadura1":{
+    "nomeArmadura": "Classic",
+    "material": "Beskar-gam, Duracero",
+    "nivel": "nível 1",
+    "tipo": "Primeira armadura geralmente escolhida pelos caçadores e mercenários"
+   },
+
+   "armadura2":{
+    "nomeArmadura": "Pilot",
+    "material": "Beskar-gam, Duracero",
+    "nivel": "nível 20",
+    "tipo": "Armadura para pilotar, irá te ajudar nas aventuras em territórios ríspidos onde você irá precisar de mais habilidade nas alturas."
+   },
+
+   "armadura3":{
+    "nomeArmadura": "Hunter",
+    "material": "Beskar-gam, Duracero",
+    "nivel": "nível 35",
+    "tipo": "Armadura para caça, acompanha acessórios especiais para caçar em diversos lugares, os melhores mercenários usam essa armadura. Com ela você irá atravessar qualquer desafio."
+   },
+
+   "armadura4":{
+    "nomeArmadura": "Elite",
+    "material": "Beskar-gam puro",
+    "nivel": "nível 50",
+    "tipo": "Armadura de Elite, apenas os mandalorianos mais respeitados usam essa armadura."
+   },
+
+
+
+    "personagem1":{
+     "nome": "Aelyn"
+    }, 
+    "personagem2":{
+        "nome": "Waxe"
+    },
+
+
+
+  
+   "arma1":{
+    "nomeArma": "jetpack",
+    "nivelArma": "nível 10",
+    "letal": "Voa até 20 metros"
+   },
+   "arma2":{
+    "nomeArma": "Espada",
+    "nivelArma": "nível 15",
+    "letal": "4/5"
+   },
+   "arma3":{
+    "nomeArma": "Blaster",
+    "nivelArma": "nível 1",
+    "letal": "4/5"
+   },
+   "arma4":{
+    "nomeArma": "Rifle",
+    "nivelArma": "nível 1",
+    "letal": "3/5"
+   }
+}
