@@ -123,8 +123,8 @@ function add1(){
 }
 function add2(){ 
     if (nivel < 20) {
-        alert("Desculpe guerreiro mas você ainda não pode usar essa armadura");
-    } else {
+        Swal.fire("Desculpa guerreiro você ainda não está capacitado para utilizar esse equipamento, continue jogando para subir de nível!");
+        } else {
         document.getElementById("armaduraEscolhido").src = './imgMandalore/PilotArmadura.jpg';
         document.getElementById("armaduraEscolhido").style.width = "200px";
     }
@@ -132,8 +132,8 @@ function add2(){
 }
 function add3(){ 
     if (nivel < 35) {
-        alert("Desculpe guerreiro mas você ainda não pode usar essa armadura");
-    }else{
+        Swal.fire("Desculpa guerreiro você ainda não está capacitado para utilizar esse equipamento, continue jogando para subir de nível!");
+        }else{
         document.getElementById("armaduraEscolhido").src = './imgMandalore/hunterArmadura.jpg';
         document.getElementById("armaduraEscolhido").style.width = "200px";
     }
@@ -142,8 +142,8 @@ function add3(){
 
 function add4(){ 
     if (nivel < 50) {
-        alert("Desculpe guerreiro mas você ainda não pode usar essa armadura");
-    }else{
+        Swal.fire("Desculpa guerreiro você ainda não está capacitado para utilizar esse equipamento, continue jogando para subir de nível!");
+        }else{
         document.getElementById("armaduraEscolhido").src = './imgMandalore/EliteArmadura.jpg';
         document.getElementById("armaduraEscolhido").style.width = "200px";
     }
